@@ -11,8 +11,18 @@ const settings = {
   userDir: "./data",
   flowFile: "flows.json",
   functionGlobalContext: {},
-  port: process.env.PORT || 1880
+  port: process.env.PORT || 1880,
+
+  adminAuth: {
+    type: "credentials",
+    users: [{
+      username: "admin",
+      password: "$2b$08$quNT4HF38EcT4N02fw6Lq.rpfTNLlAYTDZB7B.UYfZxxnuOZO238C",
+      permissions: "*"
+    }]
+  }
 };
+
 
 RED.init(server, settings);
 app.use(settings.httpAdminRoot, RED.httpAdmin);

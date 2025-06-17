@@ -9,6 +9,7 @@
   "author": "Hanif",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^6.0.0",
     "node-red": "^4.0.9"
   }
 }
