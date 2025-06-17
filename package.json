@@ -1,0 +1,14 @@
+{
+  "name": "project-nodered",
+  "version": "1.0.0",
+  "description": "For Task",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Hanif",
+  "license": "ISC",
+  "dependencies": {
+    "node-red": "^4.0.9"
+  }
+}
